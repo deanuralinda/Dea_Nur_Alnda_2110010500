@@ -1,9 +1,9 @@
-object Form1: TForm1
-  Left = 196
-  Top = 112
+object Form10: TForm10
+  Left = 192
+  Top = 125
   Width = 928
-  Height = 549
-  Caption = 'Form User'
+  Height = 480
+  Caption = 'Form10'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,11 +15,11 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 64
-    Top = 56
-    Width = 52
+    Left = 72
+    Top = 64
+    Width = 75
     Height = 18
-    Caption = 'Id_User'
+    Caption = 'Id_Kategori'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -28,11 +28,11 @@ object Form1: TForm1
     ParentFont = False
   end
   object lbl2: TLabel
-    Left = 64
-    Top = 88
-    Width = 25
+    Left = 72
+    Top = 104
+    Width = 68
     Height = 18
-    Caption = 'NIK'
+    Caption = 'Id_Barang'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -41,11 +41,11 @@ object Form1: TForm1
     ParentFont = False
   end
   object lbl3: TLabel
-    Left = 64
-    Top = 120
-    Width = 39
+    Left = 72
+    Top = 144
+    Width = 46
     Height = 18
-    Caption = 'Nama'
+    Caption = 'Id_Jual'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -54,11 +54,11 @@ object Form1: TForm1
     ParentFont = False
   end
   object lbl4: TLabel
-    Left = 64
-    Top = 152
-    Width = 67
+    Left = 448
+    Top = 64
+    Width = 93
     Height = 18
-    Caption = 'Username'
+    Caption = 'Nama_Barang'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -67,11 +67,11 @@ object Form1: TForm1
     ParentFont = False
   end
   object lbl5: TLabel
-    Left = 64
-    Top = 184
-    Width = 61
+    Left = 448
+    Top = 104
+    Width = 53
     Height = 18
-    Caption = 'Password'
+    Caption = 'Kategori'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -80,75 +80,35 @@ object Form1: TForm1
     ParentFont = False
   end
   object lbl6: TLabel
-    Left = 488
-    Top = 56
-    Width = 15
+    Left = 448
+    Top = 144
+    Width = 56
     Height = 18
-    Caption = 'JK'
+    Caption = 'Deskripsi'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-  end
-  object Label1: TLabel
-    Left = 488
-    Top = 88
-    Width = 52
-    Height = 18
-    Caption = 'Telepon'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object Label2: TLabel
-    Left = 488
-    Top = 120
-    Width = 33
-    Height = 18
-    Caption = 'Email'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object Label3: TLabel
-    Left = 488
-    Top = 152
-    Width = 45
-    Height = 18
-    Caption = 'Alamat'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object dbgrd1: TDBGrid
-    Left = 24
-    Top = 320
-    Width = 841
-    Height = 145
-    DataSource = ds1
-    TabOrder = 0
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
-    OnCellClick = dbgrd1CellClick
   end
   object edt1: TEdit
-    Left = 192
-    Top = 56
-    Width = 273
+    Left = 160
+    Top = 64
+    Width = 265
+    Height = 26
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object edt2: TEdit
+    Left = 160
+    Top = 104
+    Width = 265
     Height = 26
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -158,10 +118,10 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 1
   end
-  object edt2: TEdit
-    Left = 192
-    Top = 88
-    Width = 273
+  object edt3: TEdit
+    Left = 160
+    Top = 144
+    Width = 265
     Height = 26
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -171,10 +131,10 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 2
   end
-  object edt3: TEdit
-    Left = 192
-    Top = 120
-    Width = 273
+  object edt4: TEdit
+    Left = 560
+    Top = 64
+    Width = 257
     Height = 26
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -185,9 +145,9 @@ object Form1: TForm1
     TabOrder = 3
   end
   object edt5: TEdit
-    Left = 192
-    Top = 184
-    Width = 273
+    Left = 560
+    Top = 104
+    Width = 257
     Height = 26
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -197,9 +157,22 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 4
   end
+  object edt6: TEdit
+    Left = 560
+    Top = 144
+    Width = 257
+    Height = 26
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+  end
   object btn1: TButton
-    Left = 64
-    Top = 240
+    Left = 80
+    Top = 200
     Width = 97
     Height = 49
     Caption = 'BARU'
@@ -210,12 +183,12 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 6
     OnClick = btn1Click
   end
   object btn2: TButton
-    Left = 208
-    Top = 240
+    Left = 224
+    Top = 200
     Width = 97
     Height = 49
     Caption = 'SIMPAN'
@@ -225,12 +198,12 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 7
     OnClick = btn2Click
   end
   object btn3: TButton
-    Left = 352
-    Top = 240
+    Left = 368
+    Top = 200
     Width = 97
     Height = 49
     Caption = 'EDIT'
@@ -240,12 +213,12 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 8
     OnClick = btn3Click
   end
   object btn4: TButton
-    Left = 496
-    Top = 240
+    Left = 512
+    Top = 200
     Width = 97
     Height = 49
     Caption = 'HAPUS'
@@ -255,12 +228,12 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 8
+    TabOrder = 9
     OnClick = btn4Click
   end
   object btn5: TButton
-    Left = 640
-    Top = 240
+    Left = 656
+    Top = 200
     Width = 97
     Height = 49
     Caption = 'BATAL'
@@ -270,25 +243,12 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 9
+    TabOrder = 10
     OnClick = btn5Click
   end
-  object edt4: TEdit
-    Left = 192
-    Top = 152
-    Width = 273
-    Height = 24
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 10
-  end
   object btn6: TButton
-    Left = 776
-    Top = 240
+    Left = 792
+    Top = 200
     Width = 97
     Height = 49
     Caption = 'LAPORAN'
@@ -300,33 +260,19 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 11
   end
-  object edt6: TEdit
-    Left = 584
-    Top = 56
-    Width = 281
-    Height = 21
+  object dbgrd1: TDBGrid
+    Left = 80
+    Top = 264
+    Width = 809
+    Height = 145
+    DataSource = ds1
     TabOrder = 12
-  end
-  object edt7: TEdit
-    Left = 584
-    Top = 88
-    Width = 281
-    Height = 21
-    TabOrder = 13
-  end
-  object edt8: TEdit
-    Left = 584
-    Top = 120
-    Width = 281
-    Height = 21
-    TabOrder = 14
-  end
-  object edt9: TEdit
-    Left = 584
-    Top = 152
-    Width = 281
-    Height = 21
-    TabOrder = 15
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -339,29 +285,29 @@ object Form1: TForm1
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'C:\Program Files (x86)\Borland\Zeos703\libmysql.dll'
-    Left = 16
-    Top = 56
+    Left = 24
+    Top = 64
   end
   object zqry1: TZQuery
     Connection = con1
     Active = True
     SQL.Strings = (
-      'select * from user')
+      'select * from kategori')
     Params = <>
-    Left = 16
-    Top = 104
+    Left = 24
+    Top = 112
   end
   object ds1: TDataSource
     DataSet = zqry1
-    Left = 16
-    Top = 152
+    Left = 24
+    Top = 160
   end
   object frxdbdtst1: TfrxDBDataset
     UserName = 'frxdbdtst1'
     CloseDataSource = False
     DataSet = zqry1
-    Left = 16
-    Top = 200
+    Left = 24
+    Top = 208
   end
   object frxrprt1: TfrxReport
     Version = '4.0.11'
@@ -378,8 +324,8 @@ object Form1: TForm1
       'begin'
       ''
       'end.')
-    Left = 16
-    Top = 248
+    Left = 24
+    Top = 256
     Datasets = <
       item
         DataSet = frxdbdtst1

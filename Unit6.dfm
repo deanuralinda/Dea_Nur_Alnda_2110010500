@@ -1,6 +1,6 @@
 object Form6: TForm6
   Left = 239
-  Top = 96
+  Top = 114
   Width = 928
   Height = 480
   Caption = 'Form Detail Jual'

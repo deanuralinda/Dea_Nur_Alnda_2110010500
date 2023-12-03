@@ -1,7 +1,7 @@
 object Form7: TForm7
-  Left = 164
+  Left = 181
   Top = 179
-  Width = 947
+  Width = 930
   Height = 518
   Caption = 'Form Beli'
   Color = clBtnFace
