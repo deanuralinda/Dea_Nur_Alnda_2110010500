@@ -1,9 +1,9 @@
-object Form2: TForm2
-  Left = 214
-  Top = 79
-  Width = 928
-  Height = 574
-  Caption = 'Form Jual'
+object Form7: TForm7
+  Left = 164
+  Top = 179
+  Width = 947
+  Height = 518
+  Caption = 'Form Beli'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,11 +15,11 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 64
+    Left = 80
     Top = 64
-    Width = 46
+    Width = 43
     Height = 18
-    Caption = 'Id_Jual'
+    Caption = 'Id_Beli'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -28,11 +28,11 @@ object Form2: TForm2
     ParentFont = False
   end
   object lbl2: TLabel
-    Left = 64
+    Left = 80
     Top = 104
-    Width = 85
+    Width = 71
     Height = 18
-    Caption = 'Id_Kostumer'
+    Caption = 'Id_Supplier'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -41,7 +41,7 @@ object Form2: TForm2
     ParentFont = False
   end
   object lbl3: TLabel
-    Left = 64
+    Left = 80
     Top = 144
     Width = 68
     Height = 18
@@ -54,7 +54,7 @@ object Form2: TForm2
     ParentFont = False
   end
   object lbl4: TLabel
-    Left = 64
+    Left = 80
     Top = 184
     Width = 52
     Height = 18
@@ -67,20 +67,7 @@ object Form2: TForm2
     ParentFont = False
   end
   object lbl5: TLabel
-    Left = 64
-    Top = 224
-    Width = 53
-    Height = 18
-    Caption = 'Barcode'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbl6: TLabel
-    Left = 408
+    Left = 424
     Top = 64
     Width = 93
     Height = 18
@@ -92,8 +79,8 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
   end
-  object lbl7: TLabel
-    Left = 408
+  object lbl6: TLabel
+    Left = 424
     Top = 104
     Width = 45
     Height = 18
@@ -105,38 +92,12 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
   end
-  object lbl8: TLabel
-    Left = 408
+  object lbl7: TLabel
+    Left = 424
     Top = 144
-    Width = 92
+    Width = 39
     Height = 18
-    Caption = 'Harga_Satuan'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbl9: TLabel
-    Left = 408
-    Top = 184
-    Width = 92
-    Height = 18
-    Caption = 'Jumlah_Harga'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbl10: TLabel
-    Left = 408
-    Top = 224
-    Width = 52
-    Height = 18
-    Caption = 'Id_User'
+    Caption = 'Harga'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -147,7 +108,7 @@ object Form2: TForm2
   object edt1: TEdit
     Left = 160
     Top = 64
-    Width = 217
+    Width = 241
     Height = 26
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -160,7 +121,7 @@ object Form2: TForm2
   object edt2: TEdit
     Left = 160
     Top = 104
-    Width = 217
+    Width = 241
     Height = 26
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -173,7 +134,7 @@ object Form2: TForm2
   object edt3: TEdit
     Left = 160
     Top = 144
-    Width = 217
+    Width = 241
     Height = 26
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -186,7 +147,7 @@ object Form2: TForm2
   object edt4: TEdit
     Left = 160
     Top = 184
-    Width = 217
+    Width = 241
     Height = 26
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -197,9 +158,9 @@ object Form2: TForm2
     TabOrder = 3
   end
   object edt5: TEdit
-    Left = 160
-    Top = 224
-    Width = 217
+    Left = 536
+    Top = 64
+    Width = 257
     Height = 26
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -210,9 +171,9 @@ object Form2: TForm2
     TabOrder = 4
   end
   object edt6: TEdit
-    Left = 528
-    Top = 64
-    Width = 233
+    Left = 536
+    Top = 104
+    Width = 257
     Height = 26
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -223,9 +184,9 @@ object Form2: TForm2
     TabOrder = 5
   end
   object edt7: TEdit
-    Left = 528
-    Top = 104
-    Width = 233
+    Left = 536
+    Top = 144
+    Width = 257
     Height = 26
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -235,49 +196,9 @@ object Form2: TForm2
     ParentFont = False
     TabOrder = 6
   end
-  object edt8: TEdit
-    Left = 528
-    Top = 144
-    Width = 233
-    Height = 26
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 7
-  end
-  object edt9: TEdit
-    Left = 528
-    Top = 184
-    Width = 233
-    Height = 26
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 8
-  end
-  object dbgrd1: TDBGrid
-    Left = 24
-    Top = 352
-    Width = 841
-    Height = 145
-    DataSource = ds1
-    TabOrder = 9
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
-    OnCellClick = dbgrd1CellClick
-  end
   object btn1: TButton
-    Left = 64
-    Top = 272
+    Left = 88
+    Top = 232
     Width = 97
     Height = 49
     Caption = 'BARU'
@@ -288,12 +209,12 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 10
+    TabOrder = 7
     OnClick = btn1Click
   end
   object btn2: TButton
-    Left = 208
-    Top = 272
+    Left = 232
+    Top = 232
     Width = 97
     Height = 49
     Caption = 'SIMPAN'
@@ -303,12 +224,12 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 11
+    TabOrder = 8
     OnClick = btn2Click
   end
   object btn3: TButton
-    Left = 352
-    Top = 272
+    Left = 376
+    Top = 232
     Width = 97
     Height = 49
     Caption = 'EDIT'
@@ -318,12 +239,12 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 12
+    TabOrder = 9
     OnClick = btn3Click
   end
   object btn4: TButton
-    Left = 496
-    Top = 272
+    Left = 520
+    Top = 232
     Width = 97
     Height = 49
     Caption = 'HAPUS'
@@ -333,12 +254,12 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 13
+    TabOrder = 10
     OnClick = btn4Click
   end
   object btn5: TButton
-    Left = 640
-    Top = 272
+    Left = 664
+    Top = 232
     Width = 97
     Height = 49
     Caption = 'BATAL'
@@ -348,12 +269,12 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 14
+    TabOrder = 11
     OnClick = btn5Click
   end
   object btn6: TButton
-    Left = 776
-    Top = 272
+    Left = 800
+    Top = 232
     Width = 97
     Height = 49
     Caption = 'LAPORAN'
@@ -363,20 +284,21 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 15
+    TabOrder = 12
   end
-  object edt10: TEdit
-    Left = 528
-    Top = 224
-    Width = 233
-    Height = 26
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 16
+  object dbgrd1: TDBGrid
+    Left = 80
+    Top = 304
+    Width = 817
+    Height = 145
+    DataSource = ds1
+    TabOrder = 13
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -389,28 +311,28 @@ object Form2: TForm2
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'C:\Program Files (x86)\Borland\Zeos703\libmysql.dll'
-    Left = 16
+    Left = 32
     Top = 64
   end
   object zqry1: TZQuery
     Connection = con1
     Active = True
     SQL.Strings = (
-      'select * from jual')
+      'select * from beli')
     Params = <>
-    Left = 16
+    Left = 32
     Top = 112
   end
   object ds1: TDataSource
     DataSet = zqry1
-    Left = 16
+    Left = 32
     Top = 160
   end
   object frxdbdtst1: TfrxDBDataset
     UserName = 'frxdbdtst1'
     CloseDataSource = False
     DataSet = zqry1
-    Left = 16
+    Left = 32
     Top = 208
   end
   object frxrprt1: TfrxReport
@@ -428,7 +350,7 @@ object Form2: TForm2
       'begin'
       ''
       'end.')
-    Left = 16
+    Left = 32
     Top = 256
     Datasets = <
       item
