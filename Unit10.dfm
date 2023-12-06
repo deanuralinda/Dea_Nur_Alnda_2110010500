@@ -3,7 +3,7 @@ object Form10: TForm10
   Top = 125
   Width = 928
   Height = 480
-  Caption = 'Form10'
+  Caption = 'Form Kategori'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
