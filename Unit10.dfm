@@ -305,12 +305,14 @@ object Form10: TForm10
   object frxdbdtst1: TfrxDBDataset
     UserName = 'frxdbdtst1'
     CloseDataSource = False
-    DataSet = zqry1
+    DataSource = ds1
     Left = 24
     Top = 208
   end
   object frxrprt1: TfrxReport
     Version = '4.0.11'
+    DataSet = frxdbdtst1
+    DataSetName = 'frxdbdtst1'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
@@ -318,7 +320,7 @@ object Form10: TForm10
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45100.949348958300000000
-    ReportOptions.LastChange = 45100.958011250000000000
+    ReportOptions.LastChange = 45287.326355231480000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -366,7 +368,7 @@ object Form10: TForm10
         Top = 98.267780000000000000
         Width = 793.701300000000000000
         object Memo2: TfrxMemoView
-          Left = 75.590600000000000000
+          Left = 26.456710000000000000
           Width = 132.283550000000000000
           Height = 41.574830000000000000
           DisplayFormat.DecimalSeparator = '.'
@@ -378,11 +380,11 @@ object Form10: TForm10
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'ID HUBUNGAN')
+            'ID KATEGORI')
           ParentFont = False
         end
         object Memo3: TfrxMemoView
-          Left = 207.874150000000000000
+          Left = 158.740260000000000000
           Width = 113.385900000000000000
           Height = 41.574830000000000000
           DisplayFormat.DecimalSeparator = '.'
@@ -394,11 +396,11 @@ object Form10: TForm10
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'ID SISWA')
+            'ID BARANG')
           ParentFont = False
         end
         object Memo4: TfrxMemoView
-          Left = 321.260050000000000000
+          Left = 272.126160000000000000
           Width = 94.488250000000000000
           Height = 41.574830000000000000
           DisplayFormat.DecimalSeparator = '.'
@@ -410,12 +412,12 @@ object Form10: TForm10
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'ID ORTU')
+            'ID JUAL')
           ParentFont = False
         end
         object Memo5: TfrxMemoView
-          Left = 415.748300000000000000
-          Width = 173.858380000000000000
+          Left = 366.614410000000000000
+          Width = 143.622140000000000000
           Height = 41.574830000000000000
           DisplayFormat.DecimalSeparator = '.'
           Font.Charset = DEFAULT_CHARSET
@@ -426,11 +428,11 @@ object Form10: TForm10
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'STATUS HUBUNGAN')
+            'NAMA BARANG')
           ParentFont = False
         end
         object Memo6: TfrxMemoView
-          Left = 589.606680000000000000
+          Left = 510.236550000000000000
           Width = 128.504020000000000000
           Height = 41.574830000000000000
           DisplayFormat.DecimalSeparator = '.'
@@ -442,7 +444,22 @@ object Form10: TForm10
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'KETERANGAN')
+            'KATEGORI')
+          ParentFont = False
+        end
+        object Memo12: TfrxMemoView
+          Left = 638.740570000000000000
+          Width = 128.504020000000000000
+          Height = 41.574830000000000000
+          DisplayFormat.DecimalSeparator = '.'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'DESKRPSI')
           ParentFont = False
         end
       end
@@ -454,10 +471,10 @@ object Form10: TForm10
         DataSetName = 'frxdbdtst1'
         RowCount = 0
         object Memo7: TfrxMemoView
-          Left = 75.590600000000000000
+          Left = 26.456710000000000000
           Width = 132.283550000000000000
           Height = 37.795300000000000000
-          DataField = 'id_hubungan'
+          DataField = 'id_kategori'
           DataSet = frxdbdtst1
           DataSetName = 'frxdbdtst1'
           DisplayFormat.DecimalSeparator = '.'
@@ -469,14 +486,14 @@ object Form10: TForm10
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxdbdtst1."id_hubungan"]')
+            '[frxdbdtst1."id_kategori"]')
           ParentFont = False
         end
         object Memo8: TfrxMemoView
-          Left = 207.874150000000000000
+          Left = 158.740260000000000000
           Width = 113.385900000000000000
           Height = 37.795300000000000000
-          DataField = 'id_siswa'
+          DataField = 'id_barang'
           DataSet = frxdbdtst1
           DataSetName = 'frxdbdtst1'
           DisplayFormat.DecimalSeparator = '.'
@@ -488,14 +505,14 @@ object Form10: TForm10
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxdbdtst1."id_siswa"]')
+            '[frxdbdtst1."id_barang"]')
           ParentFont = False
         end
         object Memo9: TfrxMemoView
-          Left = 321.260050000000000000
+          Left = 272.126160000000000000
           Width = 94.488250000000000000
           Height = 37.795300000000000000
-          DataField = 'id_ortu'
+          DataField = 'id_jual'
           DataSet = frxdbdtst1
           DataSetName = 'frxdbdtst1'
           DisplayFormat.DecimalSeparator = '.'
@@ -507,14 +524,14 @@ object Form10: TForm10
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxdbdtst1."id_ortu"]')
+            '[frxdbdtst1."id_jual"]')
           ParentFont = False
         end
         object Memo10: TfrxMemoView
-          Left = 415.748300000000000000
-          Width = 173.858380000000000000
+          Left = 366.614410000000000000
+          Width = 143.622140000000000000
           Height = 37.795300000000000000
-          DataField = 'status_hubungan'
+          DataField = 'nama_barang'
           DataSet = frxdbdtst1
           DataSetName = 'frxdbdtst1'
           DisplayFormat.DecimalSeparator = '.'
@@ -526,14 +543,14 @@ object Form10: TForm10
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxdbdtst1."status_hubungan"]')
+            '[frxdbdtst1."nama_barang"]')
           ParentFont = False
         end
         object Memo11: TfrxMemoView
-          Left = 589.606680000000000000
+          Left = 510.236550000000000000
           Width = 128.504020000000000000
           Height = 37.795300000000000000
-          DataField = 'keterangan'
+          DataField = 'kategori'
           DataSet = frxdbdtst1
           DataSetName = 'frxdbdtst1'
           DisplayFormat.DecimalSeparator = '.'
@@ -545,7 +562,24 @@ object Form10: TForm10
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxdbdtst1."keterangan"]')
+            '[frxdbdtst1."kategori"]')
+          ParentFont = False
+        end
+        object Memo13: TfrxMemoView
+          Left = 638.740570000000000000
+          Width = 128.504020000000000000
+          Height = 37.795300000000000000
+          DataField = 'deskripsi'
+          DataSet = frxdbdtst1
+          DataSetName = 'frxdbdtst1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxdbdtst1."deskripsi"]')
           ParentFont = False
         end
       end

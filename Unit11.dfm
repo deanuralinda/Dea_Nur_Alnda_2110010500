@@ -1,9 +1,9 @@
 object Form11: TForm11
-  Left = 192
-  Top = 125
+  Left = 233
+  Top = 154
   Width = 928
   Height = 480
-  Caption = 'Form11'
+  Caption = 'Menu'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
